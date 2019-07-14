@@ -9,8 +9,9 @@
         $('.sidenav').sidenav({
             edge: 'right'
         });
-        $('.pushpin').pushpin();
+        $('.pushpin-demon-nav').pushpin();
         $('.tooltipped').tooltip();
+        $('.parallax').parallax();
 
     });
 </script>
