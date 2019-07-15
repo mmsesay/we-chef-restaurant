@@ -11,42 +11,21 @@
 <body>
 
     <div class="header">
-        <!-- <div class="navbar-fixed"> -->
-            <!-- main nav -->
-            <nav class="transparent z-depth-0 pushpin-demo-nav">
-                <div class="nav-wrapper">
-                    <div class="row">
-                        <div class="col s12">
-                            <div class="nav-container">
-                                <a href="#" class="brand-logo wow swing" data-wow-delay="1s">We-Chef</a>
-                                <a href="#" data-target="mobile-view" class="sidenav-trigger rounded w-12 show-on-large right tooltipped shadow-2xl wow zoomIn" data-wow-delay="2s" data-position="left" data-tooltip="Click me">
-                                    <i class="large material-icons">menu</i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-            <!-- end of main nav -->
-            <!-- banner section -->
-            <div id="banner">
-                <div class="title md:items-center lg:items-start">
-                    <h2>JUICY & HOT BURGERS</h2>
-                    <span class="byline">And a true gastronomic experience!</span>
-                </div> 
-                <a class="min-w-0 rounded-bl-full rounded-tr-full btn-large shadow-2xl wow rubberBand" data-wow-delay="4s">BOOK A TABLE</a>
+        <!-- main nav -->
+        <?php require 'includes/templates/main_nav.php'; ?>
+        <!-- end of main nav -->
+        <!-- banner section -->
+        <div id="banner">
+            <div class="title md:items-center lg:items-start">
+                <h2>JUICY & HOT BURGERS</h2>
+                <span class="byline">And a true gastronomic experience!</span>
             </div> 
-            <!-- end of banner section -->
-            <!-- sidenav -->
-            <ul class="sidenav" id="mobile-view">
-                <li> <a href="#">Home</a></li>
-                <li> <a href="#">Menu</a></li>
-                <li> <a href="#">Book A Table</a></li>
-                <li> <a href="#">About Us</a></li>
-                <li> <a href="#">Contact Us</a></li>
-            </ul>
-            <!-- end of sidenav -->
-        <!-- </div> -->
+            <a class="min-w-0 rounded-bl-full rounded-tr-full btn-large shadow-2xl wow rubberBand" data-wow-delay="4s">BOOK A TABLE</a>
+        </div> 
+        <!-- end of banner section -->
+        <!-- sidenav -->
+        <?php require 'includes/templates/side_nav.php'; ?>
+        <!-- end of sidenav -->
     </div>
 
     <!-- menu show case section -->
@@ -124,32 +103,7 @@
         </div>
         <div class="parallax"><img src="public_files/images/beef-bread-bun.jpg"></div>
     </div>
-    <!-- end of parallex image section -->
-
-
-    <!-- <div id="green" class="block green lighten-1">
-        <div class="pushpin-demo-nav" data-target="green">
-            <div class="nav-wrapper green">
-            <div class="container">
-                <a href="#" class="brand-logo">Green</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="#!">Green Link 1</a></li>
-                <li><a href="#!">Green Link 2</a></li>
-                <li><a href="#!">Green Link 3</a></li>
-                </ul>
-            </div>
-            </div>
-        </div>
-    </div> -->
-    
-    
-
-    <!-- <div class='box'>
-    <div class='wave -one'></div>
-    <div class='wave -two'></div>
-    <div class='wave -three'></div>
-    <div class='title'>Capacities</div>
-    </div> -->
+    <!-- end of parallex image section -->    
 
     <!-- requiring the footer-->
     <?php require 'includes/templates/footer.php'; ?>
